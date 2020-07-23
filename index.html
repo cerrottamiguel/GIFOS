@@ -1,0 +1,70 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIF.OS</title>
+	<link href="estilos.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: <span id="visitas"></span></header>
+	<a href="index.html"><img class="logo" src="assets/gifOF_logo.png"></a>
+
+	<!--BOTONERA DE TEMAS-->
+	<input type="checkbox" name="despliegue" class="despliegue">
+	<nav class="botonera-temas">
+		<button id="sailorDay">Sailor Day</button>
+		<button id="sailorNight">Sailor Night</button>
+	</nav>
+
+	<!--BOTONERA DE OPCIONES-->
+	<nav class="container-botones">
+		<ul>
+			<li>
+				<a class="crear" href="crear-guifos.html">Crear Guifos</a>
+			</li>
+			<li>
+				<a class="elegir" href="#">Elegir Tema</a><a class="flecha-box"><img src="assets/dropdown.svg"></img></a>
+			</li>
+			<li>
+				<a class="mis-guifos" href="mis-guifos.html">Mis Guifos</a>
+			</li>
+		</ul>
+	</nav>
+
+	<!--BUSCADOR-->
+	<div class="barra-buscar">
+		<br class="one-pixel">
+		<div class="pestaña-barra-buscar">Buscar</div>
+		<input type="text" id="buscador" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" autofocus="autofocus">
+		<button id="botonBuscar" class="botonBuscar">
+			<div class="borde-hover"></div>
+			<div class="lupa"></div>
+			Buscar
+		</button>
+	</div>
+	<div class="autocompletar">
+	</div>
+
+	<!--CONTENEDOR DE BOTONES DE BUSQUEDAS RECIENTES-->
+	<div id="recientes">
+		
+	</div>
+
+	<!--TITULO BUSQUEDA (ESCONDIDO)-->
+	<div class="titulo-busqueda"></div>
+
+	<!--SECCION PARA PINTAR LA BUSQUEDA-->
+	<div id="seccion" class="seccion"></div>
+
+	<!--SECCIONES TRENDING Y SUGERENCIAS-->
+	<div class="barra-titulo">Hoy te sugerimos:</div>
+	<div id="seccion2">
+	</div>
+	<br><br><br>
+	<div class="barra-titulo">Tendencias:</div>
+	<div id="seccion3" class="seccion">
+	</div>
+</body>
+<script src="codigo.js" type="text/javascript"></script>
+</html>
